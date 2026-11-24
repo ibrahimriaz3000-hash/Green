@@ -13,6 +13,9 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Extract project zip
+        run: unzip -o Cluster_repo_ready.zip
+
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
